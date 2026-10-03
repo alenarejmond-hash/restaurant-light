@@ -2,11 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/',
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
+  plugins: [react(), tailwindcss()],
+  // ВАЖНО! Если у тебя СВОЙ ДОМЕН (sotnikova.pro), пиши base: '/',
+  // Если у тебя БЕСПЛАТНАЯ ссылка Гитхаба, пиши base: '/НазваниеРепозитория/', 
+  base: './', 
 })
